@@ -85,7 +85,7 @@ h4 a {
 /*Page "About me" style*/
 
 .section {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
     padding-bottom: 30px;
 }
