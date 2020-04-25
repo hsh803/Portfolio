@@ -10,11 +10,6 @@ body {
     font-size: 25px;
     line-height: 50px;
 }
-/* @media screen and (max-width:800px) {
-    .box1 {
-      width:100%;
-    }
-} */
 
 span {
     font-size: 35px;
@@ -39,37 +34,13 @@ h4 a {
     text-decoration: none;
 }
 
+/*Navigation style*/
+
 .nav-container {
     margin: auto;
     padding-bottom: 80px;
     text-align: center;
 }
-
-/*Page "About me" style*/
-
-.section1, .section2 {
-    width: 800px;
-    margin: 0 auto;
-    padding-bottom: 30px;
-}
-
-.section-box1 {
-    width: 150px;    
-    padding: 10px;
-    border-bottom: 3px solid #A8C9E1;
-    text-align: center;
-}
-
-li {
-    line-height: 35px;
-}
-
-.txt {
-    line-height: 25px;
-}
-
-/*Navigation style*/
-
 .nav1, .nav2, .nav3, .nav4 {
     display: inline-block;
     width: 100px;
@@ -111,82 +82,28 @@ li {
     background-color: #FFAEAF;
 }
 
-/* Footer style */
-.footer1 {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    padding: 5px;
-    background-color: #f6f6f6;
-}
+/*Page "About me" style*/
 
-.footer2 {
-    text-align: center;
-    padding: 5px;
-    background-color: #f6f6f6;
- }
-
-  /* Pie chart Styel */
-
-  .container {
-    display: grid;
-    grid-template-columns: repeat(1, 150px);
-    grid-gap: 37px;
-    margin: auto;
-    padding-bottom: 80px;
-    justify-content: center;
-  }
-  
-  @media (min-width: 400px) {
-    .container {
-      grid-template-columns: repeat(2, 150px);
-    }
-  }
-  
-  @media (min-width: 600px) {
-    .container {
-      grid-template-columns: repeat(3, 150px);
-    }
-  }
-  
-  @media (min-width: 800px) {
-    .container {
-      grid-template-columns: repeat(4, 150px);
-    }
-  }
-
-  @media (min-width: 1000px) {
-    .container {
-      grid-template-columns: repeat(5, 150px);
-    }
-  }
-
-.box {
-    display: inline-block;
-}
-
-.box .chart {
-    width: 110px;
+.section {
+    width: 800px;
     margin: 0 auto;
-    position: relative;
-    font-size: 18px;
-    line-height: 110px;
-    text-align: center;
-    color: #000;
+    padding-bottom: 30px;
 }
 
-h4 {
+.section-box1 {
+    width: 150px;    
+    padding: 10px;
+    border-bottom: 3px solid #A8C9E1;
     text-align: center;
 }
 
-.container .box canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
+li {
+    line-height: 35px;
+}
+
+.txt {
+    line-height: 25px;
+}
 
 /*Page "My Project" style*/
 
@@ -213,4 +130,120 @@ ul li ul {
     padding: 10px;
     border-bottom: 3px solid #FFAEAF;
     text-align: center;
+}
+
+/* Footer style */
+.footer1 {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 5px;
+    background-color: #f6f6f6;
+}
+
+.footer2 {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 5px;
+    background-color: #f6f6f6;
+ }
+
+  /* Pie chart Styel */
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-gap: 37px;
+    margin: auto;
+    padding-bottom: 80px;
+    justify-content: center;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .container {
+      grid-template-columns: repeat(3, 120px);
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .container {
+      grid-template-columns: repeat(4, 150px);
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .container {
+      grid-template-columns: repeat(5, 150px);
+    }
+  }
+
+.box {
+    display: inline-block;
+}
+
+.box .chart {
+    width: 100px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 18px;
+    line-height: 100px;
+    text-align: center;
+    color: #000;
+}
+
+h4 {
+    text-align: center;
+}
+
+.container .box canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+/* Responsive style */
+
+@media screen and (max-width: 420px) {
+    .box1 {
+        font-size: 20px;
+    }
+    span {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    h4 {
+        font-size: 0.8em;
+    }
+    .nav-container {
+        padding-bottom: 5px;
+    }
+    .nav1, .nav2, .nav3, .nav4 {
+        margin: 15px;
+        padding: 10px;
+    }
+    .section {
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+    .container {
+        grid-template-columns: repeat(2, 90px);
+        padding-bottom: 40px;
+      }
+    .box .chart {
+        width: 75px;
+        margin: 0 auto;
+        position: relative;
+        font-size: 13px;
+        line-height: 75px;
+        text-align: center;
+        color: #000;
+    }
 }
