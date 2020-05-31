@@ -108,7 +108,7 @@ li {
 /*Page "My Project" style*/
 
 .section-box2 {
-    width: 150px;    
+    width: 130px;    
     padding: 10px;
     border-bottom: 3px solid #ACE3D1;
     text-align: center;
@@ -159,6 +159,7 @@ ul li ul {
     grid-template-columns: repeat(2, 150px);
     grid-gap: 37px;
     margin: auto;
+    padding-left: 70px;
     padding-bottom: 80px;
     justify-content: center;
   }
