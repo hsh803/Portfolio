@@ -25,5 +25,6 @@ $(function() {
 });
 
 $(function(){
-  $("header").load("../header.html"); 
+  $("header").load("../portfolio/header.html"); 
+  $("footer").load("../portfolio/footer.html"); 
 });
