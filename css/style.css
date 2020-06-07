@@ -2,34 +2,6 @@ body {
     font-family: sans-serif;
 }
 
-/*Page "Home" style*/
-
-.box1{
-    padding: 10px;
-    text-align: center;
-    font-size: 25px;
-    line-height: 50px;
-}
-
-span {
-    font-size: 35px;
-    font-weight: 300;
-    color: #FFAEAF;
-    animation: mix 10s infinite;
-    font-weight: bold;
-}
-
-@keyframes mix {
-    0% {color: #FFAEAF;}
-    25% {color: #ACE3D1;}
-    50% {color: #F4EB81;}
-    75%{color: #A8C9E1;}  
-  }
-
-a, a:visited, a:active {
-    color:tomato;
-}
-
 /*Navigation style*/
 
 .nav-container {
@@ -78,12 +50,64 @@ a, a:visited, a:active {
     background-color: #FFAEAF;
 }
 
+/* Footer style */
+.footer1 {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 5px;
+    background-color: #f6f6f6;
+}
+
+.footer2 {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 5px;
+    background-color: #f6f6f6;
+ }
+
+/*Page "Home" style*/
+
+.box1{
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+span {
+    font-size: 35px;
+    font-weight: 300;
+    color: #FFAEAF;
+    animation: mix 10s infinite;
+    font-weight: bold;
+}
+
+@keyframes mix {
+    0% {color: #FFAEAF;}
+    25% {color: #ACE3D1;}
+    50% {color: #F4EB81;}
+    75%{color: #A8C9E1;}  
+  }
+
+a, a:visited, a:active {
+    color:tomato;
+}
+
+h4 a {
+    text-decoration: none;
+}
+
 /*Page "About me" style*/
 
 .section {
     max-width: 1000px;
     margin: 0 auto;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .section-box1 {
@@ -93,12 +117,8 @@ a, a:visited, a:active {
     text-align: center;
 }
 
-li {
-    line-height: 35px;
-}
-
-.txt {
-    line-height: 25px;
+li, li p {
+    line-height: 33px;
 }
 
 /*Page "My Project" style*/
@@ -126,8 +146,12 @@ ul li ul {
     border-radius: 10px;
     overflow-wrap: break-word;
     display: inline-block;
-    margin: 10px 20px 15px 0;
+    margin: 0 20px 20px 0;
     padding-left: 15px;
+}
+
+.project-list p {
+    text-align: left;
 }
 
 /* Page "Contact Me" Style */
@@ -138,26 +162,6 @@ ul li ul {
     border-bottom: 3px solid #FFAEAF;
     text-align: center;
 }
-
-/* Footer style */
-.footer1 {
-    width: 100%;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    padding: 5px;
-    background-color: #f6f6f6;
-}
-
-.footer2 {
-    width: 100%;
-    position: relative;
-    text-align: center;
-    padding: 5px;
-    background-color: #f6f6f6;
- }
 
   /* Pie chart Styel */
 
